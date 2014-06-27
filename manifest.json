@@ -1,0 +1,21 @@
+{
+  "name": "VK Geo Fixer",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Позволяет массово присваивать геометки фотографиям ВКонтакте.",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "http://vk.com/*",
+    "http://*.userapi.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "inject.js"
+  ]
+}
